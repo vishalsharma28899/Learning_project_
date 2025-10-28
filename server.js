@@ -8,9 +8,9 @@ const app = express();
 
 
 const PORT = 5000;
-// cont MONGO_URI = process.env.MONGO_URI || "mongodb://mongodb:27017/mydb";
+ const MONGO_URI = process.env.MONGO_URI || "mongodb://mongodb:27017/mydb";
  
-const MONGO_URI = "mongodb://localhost:27017/mydb" ;
+//const MONGO_URI = "mongodb://localhost:27017/mydb" ;
 app.use(cors());
 app.use(express.json());
 

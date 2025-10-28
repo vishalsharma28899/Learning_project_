@@ -1,15 +1,15 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-   
+
 const app = express();
 
 
 
 
 const PORT = 5000;
- const MONGO_URI =  "mongodb+srv://vishal:vishal894284@cluster0.5e43sxa.mongodb.net/?appName=Cluster0";
- 
+const MONGO_URI = "mongodb+srv://vishal:vishal@894284@cluster0.5e43sxa.mongodb.net/?appName=Cluster0";
+
 //const MONGO_URI = "mongodb://localhost:27017/mydb" ;
 app.use(cors());
 app.use(express.json());

@@ -8,7 +8,7 @@ const app = express();
 
 
 const PORT = 5000;
- const MONGO_URI = process.env.MONGO_URI || "mongodb://mongodb:27017/mydb";
+ const MONGO_URI =  "mongodb+srv://vishal:vishal894284@cluster0.5e43sxa.mongodb.net/?appName=Cluster0";
  
 //const MONGO_URI = "mongodb://localhost:27017/mydb" ;
 app.use(cors());

@@ -12,9 +12,11 @@ services:
     depends_on:
       - mongodb
       - redis
+      - rabbitmq
     environment:
       - MONGO_URI=mongodb://mongodb:27017/mydb
       - REDIS_URL=redis://redis:6379
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672/
     networks:
       - backend_network
 
@@ -36,6 +38,14 @@ services:
     networks:
       - backend_network
 
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - backend_network
 networks:
   backend_network:
 
